@@ -1,0 +1,24 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/623ad0cf3fc45ae9dc36df06
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Third",
+    "subscribedToChannel": "Avengers"
+}
+
+###
+DELETE http://localhost:3000/subscribers/623ad0ad3fc45ae9dc36df04
+
+###
+PATCH  http://localhost:3000/subscribers/623ad38c3fc45ae9dc36df1d
+Content-Type: application/json
+
+{
+    "subscribedToChannel": "Running"
+}
